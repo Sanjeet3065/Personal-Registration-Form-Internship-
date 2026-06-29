@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Personal Registration Form</h1>
+
+    <form id="myForm">
+
+        <!-- First Name -->
+
+        <div class="input-box">
+            <label>First Name</label>
+            <input type="text" id="fname">
+            <span id="fnameError"></span>
+        </div>
+
+        <!-- Last Name -->
+
+        <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" id="lname">
+            <span id="lnameError"></span>
+        </div>
+
+        <!-- Age -->
+
+        <div class="input-box">
+            <label>Age</label>
+            <input type="number" id="age">
+            <span id="ageError"></span>
+        </div>
+
+        <!-- Address -->
+
+        <div class="input-box">
+            <label>Address</label>
+
+            <textarea id="address"></textarea>
+
+            <span id="addressError"></span>
+
+        </div>
+
+        <!-- Gender -->
+
+        <div class="input-box">
+
+            <label>Gender</label>
+
+            <div class="radio">
+
+                <input type="radio" name="gender" value="Male"> Male
+
+                <input type="radio" name="gender" value="Female"> Female
+
+                <input type="radio" name="gender" value="Other"> Other
+
+            </div>
+
+            <span id="genderError"></span>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="input-box">
+
+            <label>Contact Number</label>
+
+            <input type="number" id="contact" minlength="0" maxlength="10">
+
+            <span id="contactError"></span>
+
+        </div>
+
+        <!-- Email -->
+
+        <div class="input-box">
+
+            <label>Email</label>
+
+            <input type="text" id="email">
+
+            <span id="emailError"></span>
+
+        </div>
+
+        <!-- ID Proof -->
+
+        <div class="input-box">
+
+            <label>ID Proof</label>
+
+            <select id="proof">
+
+                <option value="">Select</option>
+
+                <option>Aadhaar</option>
+
+                <option>Passport</option>
+
+                <option>PAN Card</option>
+
+                <option>Bank Passbook</option>
+
+                <option>Voter ID</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <span id="proofError"></span>
+
+        </div>
+
+        <!-- Upload -->
+
+        <div class="input-box">
+
+            <label>Upload File</label>
+
+            <input type="file" id="upload">
+
+            <span id="uploadError"></span>
+
+        </div>
+
+        <!-- Vegetables -->
+
+        <div class="input-box">
+
+            <label>Vegetables</label>
+
+            <div class="check">
+
+                <input type="checkbox"> Potato
+
+                <input type="checkbox"> Tomato
+
+                <input type="checkbox"> Onion
+
+                <input type="checkbox"> Carrot
+
+                <input type="checkbox"> Cabbage
+
+            </div>
+
+        </div>
+
+        <!-- Fruits -->
+
+        <div class="input-box">
+
+            <label>Fruits</label>
+
+            <div class="check">
+
+                <input type="checkbox"> Apple
+
+                <input type="checkbox"> Mango
+
+                <input type="checkbox"> Banana
+
+                <input type="checkbox"> Orange
+
+                <input type="checkbox"> Grapes
+
+            </div>
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="input-box">
+
+            <label>Password</label>
+
+            <input type="password" id="password">
+
+            <span id="passwordError"></span>
+
+        </div>
+
+        <!-- Confirm Password -->
+
+        <div class="input-box">
+
+            <label>Confirm Password</label>
+
+            <input type="password" id="confirmPassword">
+
+            <span id="confirmError"></span>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="button">
+
+            <button type="submit">
+                Submit
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
